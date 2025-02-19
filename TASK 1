@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px; /* To enable scrolling */
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            color: #333;
+        }
+
+        /* Navigation Menu Styling */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #4CAF50; /* Initial background color */
+            z-index: 1000;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover Effect */
+        nav ul li a:hover {
+            background-color: #ff6347; /* Orange background on hover */
+            color: #fff; /* White text on hover */
+        }
+
+        /* Active State on Scroll */
+        .scrolled {
+            background-color: #333; /* Darker background after scrolling */
+            transform: translateY(-5px); /* Slightly lift the menu on scroll */
+        }
+
+        /* Content Styling */
+        .content {
+            padding: 100px 20px;
+            text-align: center;
+            color: #555;
+        }
+
+        /* Section Styles for Testing Scroll */
+        section {
+            height: 500px;
+            margin: 20px 0;
+            background-color: #e2e2e2;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Scroll down to see the effect on the navigation menu!</p>
+    </div>
+
+    <!-- Sections for scrolling -->
+    <section id="home">Home Section</section>
+    <section id="about">About Section</section>
+    <section id="services">Services Section</section>
+    <section id="contact">Contact Section</section>
+
+    <script>
+        // Select the navigation bar
+        const navbar = document.getElementById('navbar');
+
+        // Add event listener for scroll event
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) { // When scroll position is greater than 50px
+                navbar.classList.add('scrolled'); // Add scrolled class
+            } else {
+                navbar.classList.remove('scrolled'); // Remove scrolled class
+            }
+        });
+    </script>
+
+</body>
+</html>
