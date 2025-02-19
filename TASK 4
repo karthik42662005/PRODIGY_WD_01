@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Web Developer</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main Section */
+        .main-container {
+            width: 80%;
+            margin: 40px auto;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-content img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #333;
+        }
+
+        .main-content div {
+            max-width: 600px;
+        }
+
+        .main-content h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Skills Section */
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .skills div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+
+        .skills div h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1.2em;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skills {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills div {
+                width: 200px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>JVV KARTHIK</h1>
+        <p>Web Developer | Designer | Problem Solver</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="main-container">
+        <div class="main-content">
+            <img src="your-photo.jpg" alt=" Photo">
+            <div>
+                <h2>Hi, I'm Karthik</h2>
+                <p>I am a passionate and driven web developer with experience in creating responsive and user-friendly websites. I specialize in front-end development, focusing on crafting visually appealing and intuitive web applications.</p>
+                <p>Let's build something great together!</p>
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="about">
+            <h2>About Me</h2>
+            <p><strong>Background:</strong> I have always had a fascination with technology and design. From a young age, I was captivated by how websites and apps work, and that led me to pursue a career in web development.</p>
+            <p><strong>Education:</strong> I have a Bachelor's degree in Computer Science from [Your University], where I learned the fundamentals of coding and software development.</p>
+            <p><strong>Professional Experience:</strong> Over the years, I have worked on various projects, ranging from small websites to larger applications. My primary focus is building responsive, user-friendly web experiences using the latest technologies.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="skills">
+            <div>
+                <h3>HTML</h3>
+                <p>Intern</p>
+            </div>
+            <div>
+                <h3>CSS</h3>
+                <p>Intern</p>
+            </div>
+            <div>
+                <h3>JavaScript</h3>
+                <p>Intern</p>
+            </div>
+            <div>
+                <h3>React</h3>
+                <p>Intern</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 karthik. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
